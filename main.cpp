@@ -41,3 +41,45 @@ double pow(double x) {
 	}
 	return x;
 }
+int rol(int x) { return (x << 1); }
+int ror(int x) { return (x >> 1); }
+int nott(int x) { return (!x); }
+int andd(int x, int y) { return (x & y); }
+int orr(int x, int y) { return (x | y); }
+int main() {
+	while (1) {
+		cout << endl
+			<< "Select the operation [+, -, *, /, %, ^, !, &, |, <, >]" << endl;
+		char operand;
+		cin >> operand;
+		int x, y;
+		switch (operand) {
+		case '+':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Ener the second figure" << endl;
+			cin >> y;
+			cout << add(x, y) << endl;
+			break;
+		case '-':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			cout << sub(x, y) << endl;
+			break;
+		case '*':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			cout << mul(x, y) << endl;
+			break;
+		case '/':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			if (y != 0) {
+				cout << div(double(x), y) << endl;
+			}
