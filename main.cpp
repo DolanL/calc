@@ -83,3 +83,53 @@ int main() {
 			if (y != 0) {
 				cout << div(double(x), y) << endl;
 			}
+                        else
+				cout << "Error.There are 0 in the denominator " << endl;
+			break;
+		case '%':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			cout << mod(x, y) << endl;
+			break;
+		case '^':
+			cout << "Enter x figure" << endl;
+			cin >> x;
+			cout << pow((double)x);
+			break;
+		case '<':
+			cout << "Enter x figure" << endl;
+			cin >> x;
+			cout << rol(x) << endl;
+			break;
+		case '>':
+			cout << "Enter x figure" << endl;
+			cin >> x;
+			cout << ror(x) << endl;
+			break;
+		case '!':
+			cout << "Enter x figure" << endl;
+			cin >> x;
+			cout << nott(x) << endl;
+			break;
+		case '&':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			cout << andd(x, y) << endl;
+			break;
+		case '|':
+			cout << "Enter the first figure" << endl;
+			cin >> x;
+			cout << "Enter the second figure" << endl;
+			cin >> y;
+			cout << orr(x, y) << endl;
+			break;
+		default:
+			cout << "Error" << endl;
+		}
+	}
+	return 0;
+}
